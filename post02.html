@@ -7,8 +7,27 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=0.5,maximum-scale=2.0,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	    <link href="//vjs.zencdn.net/5.4.6/video-js.min.css" rel="stylesheet">
+        <script src="//vjs.zencdn.net/5.4.6/video.min.js"></script>
+	
+	<style>
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            div.videocontent {
+                width:100%;
+            }
+            div.wrapper {
+                max-width:750px; 
+                margin: 0 auto;
+            }
+
+        </style>
+	
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <title>XUA.</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -64,10 +83,14 @@
         <!-- Post -->
         <div class="container-fluid">
             <div class="row">
-                <div class="vid-wrap">
-					<video  width="1024" height="534" preloader="auto" controls>
-						<source src="images/post02.mp4" >
-					</video>
+				 <div class="wrapper">
+            <div class="videocontent">
+                <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered vjs-16-9" controls preload="auto"  data-setup="{}">
+                    <source src="images/post02.mp4">
+                </video>
+            </div>
+        </div>
+                
                     <div class="alf-post-wrapper">
                         <div class="title-block">
                             <h2>Motion Design</h2>
