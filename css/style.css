@@ -21,6 +21,21 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Karla');
 
 /*** 02. General settings ***/
+vid-wrap{
+	width:100%;background:000;
+	position:relative;
+	padding-bottom:56.25%;
+	height:0;
+	
+}
+vid-wrap vedio{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%
+}
+
 
 body {
     font-family: 'Karla', sans-serif;
